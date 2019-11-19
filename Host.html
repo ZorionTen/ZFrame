@@ -1,0 +1,33 @@
+<!doctype HTML>
+<html>
+<body>
+<input palceholder="Enter Full Address" id="input"> <button id="button" onclick="go()">GO!</button>
+<object data="http://allwebco-templates.com/support/S_script_IFrame.htm" width=100% height=1000 id="frame"></object>
+<script>
+onload=init()
+window.onresize = function res(event)
+{
+	console.log(window.innerHeight);
+	frame=document.getElementById("frame");
+	frame.height=window.innerHeight-45;
+} 
+function go()
+{
+	console.log("go begin")
+	frame=document.getElementById("frame");
+	input=document.getElementById("input");
+	console.log(input.value);
+	frame.data=input.value
+}
+function init()
+{
+	console.log("init begin");
+	frame=document.getElementById("frame");
+	frame.data="https://zorion10.github.io";
+	button=document.getElementById("button");
+	button.addEventListener("click", go());
+}
+
+</script>
+</body>
+</html>
