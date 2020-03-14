@@ -17,7 +17,8 @@ function go()
 	frame=document.getElementById("frame");
 	input=document.getElementById("input");
 	console.log(input.value);
-	frame.data=input.value
+	frame.data=input.value;
+	frame.load(input.value);
 }
 function init()
 {
