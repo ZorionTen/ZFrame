@@ -3,11 +3,14 @@
 <body>
 <input palceholder="Enter Full Address" id="input"> <button id="button" onclick="go()">GO!</button>
 <object data="https://www.xvideos.com" width=100% height=1000 id="frame"></object>
+<p id='plog'></p>
 <script>
-onload=init()
+onload=init();
+l=getElementById('plog');
 window.onresize = function res(event)
 {
 	console.log(window.innerHeight);
+        l.innerHTML+="
 	frame=document.getElementById("frame");
 	frame.height=window.innerHeight-45;
 } 
