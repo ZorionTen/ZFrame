@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Righteous&family=Roboto&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+body{
+	font-family: 'Syne Mono', monospace;
+	background:#f6f0f3; 
+	color:white;
+	padding: 0px;
+	margin:auto;
+}
+#navbar{
+	font-family: 'Righteous', cursive;
+	background-color:#f6f0f3;
+	color: #522A27;
+	position: fixed;
+	top:0;
+	width:100%;
+	margin:auto;
+	overflow: hidden;
+	align-items: center;
+	vertical-align: middle;
+	box-shadow: 0px 2px 10px black;
+}
+#nav_links{
+	padding: 0px 10px 0px 10px;
+	float:right;
+    display: table-cell;
+    vertical-align: middle;
+}
+#nav_logo{
+	float:left;
+	margin-bottom:0px;
+	padding: 5px;	
+}
+.logo h2{
+	color:#522A27;
+}
+.logo img{
+	height: 50px;
+	width: auto;
+}
+.menu_item{
+	transition-duration: 0.2s;
+}
+a.menu_item{
+	font-family: 'Righteous', cursive;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 18px;
+	text-decoration: none;
+	color: #522A27;
+	size:auto;
+	display: inline-block;
+	float:left;
+	padding: 10px;
+	margin-top:20px;
+}
+button.menu_item{
+	font-family: 'Righteous', cursive;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	size:auto;
+	display: inline-block;
+	float:left;
+	padding: 10px;
+	margin-top:20px;
+	border-radius: 10px;
+	background:#522A27; 
+}
+button.menu_item:hover{
+	background:#f6f0f3;
+	color:#522A27;
+}
+a.menu_item:hover{
+	text-decoration: blink;
+	background-color: #522A27;
+	color:#f6f0f3;
+	font:bold;
+}
+#form_main{
+	width:100%;	
+	align-items: center;
+	display:inline-block;
+	background: linear-gradient(90deg, rgba(163,194,125,1) 50%, rgba(59,84,28,1) 100%);
+	color:black;
+	text-align: right;
+	align-items: center;
+}
+.form_main table{
+	margin:auto;
+	border-spacing: 200px;
+}
+.form_div{	
+	text-align: center;
+	display: block;
+	background: #f6f0f3;
+	border-radius: 10px;
+	align-self: right;
+	display: inline-block;
+	padding: 20px;
+}
+.form_div input{
+	width: 256px;
+	padding :20px;
+	border-radius: 5px;
+	border-style: none;
+	margin:10px;
+}
+.form_div form{
+	padding:10px;
+}
+#subtext
+{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	color:#522A27;
+	font-size: 20px;
+	font-weight: bolder;
+}
+#tagline
+{
+	margin: 0px;
+	color:#522A27;
+	font-size: 18px;
+	font-weight: bolder;
+}
+#domain{
+	margin:0px;
+	font-family: 'Holtwood One SC', serif;
+	color:#522A27;
+	font-size: 64px;
+	padding:0px;
+}
+.form_div h4{
+	font-size: 30px;
+	padding:0px;
+	margin:0px;
+}
+input.btn{
+	font-style: bolder;
+	font-size: 20px;
+	border-style: solid;
+	border-width: 2px;
+	background:#C43E1C;
+	color:white;
+	padding: 20px;	
+	border-color: #C43E1C;
+	margin:auto;
+	transition-duration: 0.2s;
+}
+input.btn:hover{
+	border-style: solid;
+	border-color: #C43E1C;
+	background: #f6f0f3; 
+	color:black;
+}
+.about{
+	text-align: justify;
+	font-family: 'Courier Prime', monospace;
+	padding: 10px;
+	width:80%;
+	margin: auto;
+}
+.about h1{
+	color:#C43E1C;
+	border-bottom-style: solid;
+	animation: borderanim 30s infinite;
+}
+@keyframes borderanim{
+	0% {
+		border-bottom-color: red;
+	}
+	25% {
+		border-bottom-color: green;
+	}
+	75% {
+		border-bottom-color: blue;
+	}
+	100% {
+		border-bottom-color: red;
+	}
+
+}
+.about p{
+	color:gray;
+	display: inline;
+}
+.about span{
+	color:black;
+	font-size: 24px;
+}
+.about table{
+	border-spacing: 20px;
+}
+.about img{
+	height: 720px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+.pricing{
+	border-top-style: solid;
+	margin:auto;
+	font-family: 'Nova Mono', monospace;
+	width:80%;
+	text-align: center;
+	padding:10px;
+	animation: TopBorderAnim 30s infinite;
+}
+@keyframes TopBorderAnim{
+	0% {
+		border-top-color: red;
+	}
+	25% {
+		border-top-color: green;
+	}
+	75% {
+		border-top-color: blue;
+	}
+	100% {
+		border-top-color: red;
+	}
+
+}
+.pricing h1
+{
+	color:#C43E1C;
+} 
+.plan
+{
+	padding:20px;
+	display: inline-block;
+	background: white;
+	color:black;
+	box-shadow:0px 10px 20px gray;
+	border-radius: 10px;
+	margin :50px;
+}
+.plan h2
+{
+	color:chocolate;
+}
+.plan h3
+{
+	color:chocolate;
+}
+.plan p{
+	font-weight: bolder;
+}
+.plan button{
+	font-style: bolder;
+	font-size: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 50px;
+	background:#C43E1C;
+	color:white;
+	padding: 20px;	
+	border-color: #C43E1C;
+	margin:auto;
+	transition-duration: 0.2s;
+}
+.plan button:hover{
+	border-style: solid;
+	border-color: #C43E1C;
+	background: white; 
+	color:black;
+}
+.portfolio{
+	background: white;
+	width:90%;
+	margin:auto;
+	color:black;
+	text-align: center;
+	box-shadow: 0px 0px 20px gray;
+	padding: 20px;
+}
+.portfolio h1{
+	color:#C43E1C;
+	padding:10px;
+	padding-top: 80px;
+	font-family: 'Courier Prime', monospace;
+}
+.portfolio_items{		
+	font-family: 'Courier Prime', monospace;
+	padding: 10px;
+}
+.pf_item {
+	background: whitesmoke;
+	box-shadow: 0px 5px 10px gray;
+	width: 480px;
+	margin:20px;
+	display: inline-block;
+}
+.pf_item a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color:purple;
+}
+.pf_item a:hover{
+	color:magenta;
+}
+.pf_item img{
+	width:100%;
+}
+.banner {
+	padding:50px;
+	text-align: center;
+	vertical-align: middle;
+	background: linear-gradient(#201E1F,#FAAA8D);
+	background-size: 100% 1200%;
+	margin-top:20px;
+	animation: BannerBackground 30s infinite;
+}
+@keyframes BannerBackground{
+	0%{
+		background-position:0% 0%;
+	}
+	50%{
+		background-position:00% 100%;
+	}
+	100%{
+		background-position:0% 0%;
+	}
+}
+.banner h1{
+	color:whitesmoke;
+	font-family: 'Holtwood One SC', serif;
+	margin:0px;
+	font-size: 64px;
+	font-weight: normal;
+}
+.banner p{
+	font-size: 20px;
+	margin:0px;
+}
+.process {
+	width:80%;	 
+	text-align: center;
+	margin:auto;
+	align-items:center;	
+}
+.process h1{
+	border-top-style: solid;
+	animation: TopBorderAnim 30s infinite;
+	color:#C43E1C;
+	padding:20px;
+	margin-top: 80px;
+	font-family: 'Courier Prime', monospace;
+}
+.step{
+	margin:auto;
+	margin-top: 20px;
+	text-align: right;
+	height:auto;
+	width: 360px;
+	background: white;
+	box-shadow: 0px 10px 20px #f0a0f0;
+	border-radius: 10px;
+	padding-right:10px;
+}
+.step h2{
+	padding: 20px;
+	color:white;
+	background:purple;
+	border-radius: 10px;
+}
+.step h3{
+	color: black;
+}
+.step p{
+	color:gray;
+	padding: 20px;
+	padding-top: 0px;
+}
+.support{
+	background-color: #FF4000;
+	background-image: url("../src/support.jpg");
+	background-size: auto 200%;
+	background-position: 0% 50%;
+	width:100%;
+	height:240px;
+	background-repeat: no-repeat;
+	text-align: right;
+}
+.support h1{
+	border-top-style: solid;
+	color:whitesmoke;
+	padding:20px;
+	margin-top: 80px;
+	font-family: 'Courier Prime', monospace;
+	margin-bottom: 0px;
+}
+.support p{
+	font-weight: bold;
+}
+.blogs{
+	width:80%;
+	text-align: center;
+	margin:auto;
+	vertical-align: top;
+}
+.blogs h1{
+	color:#C43E1C;
+	width: 100%;
+	margin:0px;
+}
+.blog{
+	display: inline-block;
+	width:360px;
+	height:auto;
+	text-align: left;
+	background: white;
+	box-shadow: 0px 0px 20px gray;
+	border-radius: 20px;
+	padding:20px;
+	margin:25px;
+	vertical-align: top;
+}
+.blog h2{
+	color:black;
+	size:18px;
+}
+.blog p{
+	color:gray;
+	text-align: justify;
+}
+.blog h3{
+	color:gray;
+	font-weight: bold;
+	font-size: 14px;
+	transition-duration: 0.2s;
+}
+.blog h3:hover{
+	color:purple;
+	font-size: 16px;
+}
+.blog img{
+	width:100%;
+	border-bottom-style: solid;
+	border-bottom-color: pink;
+}
+.footer {
+	background: linear-gradient(to right,#FAAA8D 70%,#FF4000 100%);
+	text-align: center;
+	font-family: 'Nova Mono', monospace;
+}
+.branding {
+	text-align: right;
+	padding:10px;
+	display: inline-block;
+	vertical-align: top;
+}
+.branding img{
+	height: 64px;
+	display: inline-block;
+}
+.branding h1{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.contact{
+	text-align: left;
+	display: inline-block;
+}
+@media (max-width: 1080px) {
+	#navbar{
+		width:auto;
+	}
+	#form_main{
+		width:auto;
+	}
+	.about{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	}
+}

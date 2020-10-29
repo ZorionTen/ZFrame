@@ -1,35 +1,252 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-<body>
-<input palceholder="Enter Full Address" id="input"> <button id="button" onclick="go()">GO!</button>
-<object data="https://www.tinywebgallery.com/blog/advanced-iframe/free-iframe-checker" width=100% height=1000 id="frame"></object>
-<p id='plog'></p>
-<script>
-onload=init();
-l=getElementById('plog');
-window.onresize = function res(event)
-{
-	console.log(window.innerHeight);
-        l.innerHTML+="a";
-	frame=document.getElementById("frame");
-	frame.height=window.innerHeight-45;
-} 
-function go()
-{
-	console.log("go begin")
-	frame=document.getElementById("frame");
-	input=document.getElementById("input");
-	console.log(input.value);
-	frame.data=input.value;
-}
-function init()
-{
-	console.log("init begin");
-	frame=document.getElementById("frame");
-	button=document.getElementById("button");
-	button.addEventListener("click", go());
-}
+    <head>
+    	<title>Youtube Views</title>
+    	<link rel="stylesheet" href="src/style.css">
+    	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    </head>
+    <body>
+    	<div id="navbar">
+    		<div id="nav_logo" class="logo">
+    			<table>
+    				<td><img src="src/logo.png" alt="logo.png" id="nav_logo"></td>
+    				<td><h2>YOUTUBE VIEWS</h2></td>
+    			</table>
+    		</div>
+    		<div id="nav_links">
+	    		<a class="menu_item" onclick="navClick('.form_main')">
+	    			HOME
+	    		</a>
+	    		<a class="menu_item" onclick="navClick('.about')">
+	    			ABOUT US
+	    		</a>
+	    		<a class="menu_item" onclick="navClick('.portfolio')">
+	    			SERVICES
+	    		</a>
+	    		<a class="menu_item" onclick="navClick('.pricing')">
+	    			PRICING
+	    		</a>
+	    		<a class="menu_item" onclick="navClick('.blogs')">
+	    			BLOG
+	    		</a>
+	    		<a class="menu_item" onclick="navClick('.footer')">
+	    			CONTACT
+	    		</a>	 
+    		</div>
+    	</div>
+    	<div class="form_main" id="form_main">
+    		<table><tr>
+    			<td>
+	    			<p id="subtext">Video Advertising Agency</p>
+	    			<p id="domain">YOUTUBE VIEWS</p>
+	    			<p id="tagline">We know the significance of YouTube Marketing. Don't read it...SEE IT!</p>
+	    		</td>
+	    		<td>
+		    		<div class="form_div">    			
+		    			<h4>Get Started</h4>
+		    			<form id="form">
+		    				<input type="text" name="name" placeholder="Enter name" required="required"><br>
+		    				<input type="text" name="mobile" placeholder="Enter Mobile No" required="required"><br>
+		    				<input type="email" name="email" placeholder="Enter email" required="required"><br>
+		    				<input type="text" name="message" placeholder="Enter Video URL" required="required"><br>
+		    				<input class="btn" type='submit' name='submit' value="Get Started">
+		    			</form>
+		    		</div>
+	    		</td>
+    		</tr></table>
+    	</div>
+    	<div class="about">
+    		<table>
+    			<td>
+    				<img src="src/getview1.jpg" alt="getview1.jpg">
+    			</td>    			
+    			<td>
+    				<div>
+    				<h1>About Us</h1>
+    			 <span>Our Key of excellence :-</span><p> Our primary objective is to Get Your YouTube Video Seen by Genuine viewer. Our clients get maximum YouTube views and also get genuine subscriber on their channel. And we make every possible effort in providing them a Healthy and competitive edge over their competitor in the market.</p><br>
+				<span>Reliability:-</span><p> Our Service quality is being trustworthy and performing consistently well. Our result is most reliable in the market. We perform what we promised service dependably and accurately. Our company delivers its promises about delivery, service provision, problem resolutions and pricing.</p><br>
+<span>Responsiveness:-</span><p> Our company insists on careful readiness to deal with the problems of our company, requesting party’s complaints and providing prompt service to help customers. We at all times focus on accountability to customers and answers to their questions, and help problems. We provide customized service to customers.
+</p><br>
+<span>Assurance:-</span><p> Assurance means Trust gains in form of customer that connects with the company, thus we think about the importance of creating trust and confidence of customers for achieving profit and customer loyalty.
+</p><br>
+<span>Vision:-</span><p> With the increasing dependence on Get View, almost every YouTuber’s is making a strong place in the market to get new subscribers and for more like and comments people contact on more and more in Get View. Our highly professional team of video marketing experts has this unique vision of placing our clients in the league of video trending. We want to promote growth in the best way.
+</p><br>
+<span>Mission :-</span><p> It is true that video trending cannot happen without good content. The Get View works hard to strike a balance between quality and affordability. In fact, we offer a comprehensive plan that greatly encourages customers to compare and then make decisions.
+</p><br>
+<span>Your Goal :-</span><p> We understand your needs. We ensure the best conversions for our clients. We know what their businesses mean to them and therefore leave no stone unturned to offer the best services.</p><br>
+					</div>
 
-</script>
-</body>
-</html>
+    			</td>
+    		</table>
+    	</div>
+
+    	<div class='pricing'>
+    		<h1>Plans</h1>
+    		<div class="plan">
+    			<h2>PRICE UNKNOWN</h2>
+    			<h3>Lite</h2>
+    			<p>5k+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn">Buy Now</button>
+    		</div>
+    		<div class="plan">
+    			<h2>PRICE UNKNOWN</h2>
+    			<h3>Plus</h2>
+    			<p>10k+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn">Buy Now</button>
+    		</div>
+    		<div class="plan">
+    			<h2>PRICE UNKNOWN</h2>
+    			<h3>Pro</h2>
+    			<p>20k+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn">Buy Now</button>
+    		</div>
+    		<div class="plan">
+    			<h2>PRICE UNKNOWN</h2>
+    			<h3>Premium</h2>
+    			<p>50k+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn">Buy Now</button>
+    		</div>
+    		<div class="plan">
+    			<h2>PRICE UNKNOWN</h2>
+    			<h3>Gold</h2>
+    			<p>1Lac+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn">Buy Now</button>
+    		</div>
+    		<div class="plan">
+    			<h2>PRICE UNKNOWN</h2>
+    			<h3>Platinum</h2>
+    			<p>1Mil+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn">Buy Now</button>
+    		</div>
+    	</div>
+    	<div class="portfolio">
+    		<h1>We also give a complete report of your video</h1>
+    		<div class="portfolio_items">
+    			<div class="pf_item">
+    				<img src="src/5k-views.jpg"><br>
+    				<a href="https://www.youtube.com/watch?v=PSNV8uYTzZE">Anshul Mathur</a>
+    				<p>5k+ Views</p>
+    			</div>
+    			<div class="pf_item">
+    				<img src="src/10k-views.jpg"><br>
+    				<a href="https://www.youtube.com/watch?v=JABaOR76tUA">Tribal Rapper</a>
+    				<p>10k+ Views</p>
+    			</div>
+    			<div class="pf_item">
+    				<img src="src/20k-views.jpg"><br>
+    				<a href="https://www.youtube.com/watch?v=Dhs9_S0fLEA">Ravi Sisodiya</a>
+    				<p>20k+ Views</p>
+    			</div>
+    			<div class="pf_item">
+    				<img src="src/50k-views.jpg"><br>
+    				<a href="https://www.youtube.com/watch?v=B7AKr8PvYbM">MAYADHAR CLASSES</a>
+    				<p>50k+ Views</p>
+    			</div>
+    			<div class="pf_item">
+    				<img src="src/1lac-views.jpg"><br>
+    				<a href="https://www.youtube.com/watch?v=B7AKr8PvYbM">MAYADHAR CLASSES</a>
+    				<p>1Lac+ Views</p>
+    			</div>
+    			<div class="pf_item">
+    				<img src="src/1mil-views.jpg"><br>
+    				<a href="https://www.youtube.com/watch?v=Qd8T3A6vBIw">MANIK WINGS MUSIC</a>
+    				<p>1Mil+ Views</p>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="banner">
+    		<h1>YOUTUBE VIEWS</h1>
+    		<p>PROMOTE YOUR VIDEOS TO MILLIONS</p>
+    	</div>
+    	<div class="process">
+    		<h1>We follow Few Steps</h1>
+    		<div class="step">
+    			<h2>STEP 1</h2>
+    			<h3>START YOUR CAMPAIGN</h3>
+    			<p>Sign up and search for your video. Choose budget and target audience. Done!</p>
+    		</div>
+    		<div class="step">
+    			<h2>STEP 2</h2>
+    			<h3>GET SEEN</h3>
+    			<p>Distribute your YouTube video through our trusted publisher network of 10,000+ blogs, websites, apps and social networks.</p>
+    		</div>
+    		<div class="step">
+    			<h2>STEP 3</h2>
+    			<h3>GAIN POPULARITY</h3>
+    			<p>Right people discover your video. Gain popularity and monitor real time results.</p>
+    		</div>
+    		<div class="step">
+    			<h2>STEP 4</h2>
+    			<h3>Reporting Our Video</h3>
+    			<p>Your video is analyzed and then reported.</p>
+    		</div>
+    		<div class="step">
+    			<h2>STEP 5</h2>
+    			<h3>Confirmation</h3>
+    			<p>Confirmation is done on your YouTube channel and our report.</p>
+    		</div>
+    	</div>
+    	<div class="support">
+    		<h1>Best Team Support</h1>
+    		<p>Our team will join you and support you in every way, any problem related to your video, any discussion, share it with us.</p>
+    	</div>
+    	<div class="blogs">
+    		<h1>Blogs</h1>
+    		<div class="blog">
+    			<img src="src/blog1.jpg">
+    			<p>Posted By: Vipin Rai</p>
+    			<h2>How to grow Your YouTube Channel to maximize views?</h2>
+    			<p>India has become the largest growing center in world. ComScore data suggests that YouTube has more than 265 million monthly active users in India. If you have a YouTube channel and you make videos, start promoting it from now on.</p>
+    			<h3>Read more </h3>
+    		</div>
+    		<div class="blog">
+    			<img src="src/blog2.jpg">
+    			<p>Posted By: Neha Singh</p>
+    			<h2>YouTube Video Monetization</h2>
+    			<p>video monetization is the process of making of money through the video that share online on any of the YouTube partner platform. This normally accomplished through Advertisement and through member.</p>
+    			<h3>Read more </h3>
+    		</div>
+    		<div class="blog">
+    			<img src="src/blog3.jpg">
+    			<p>Posted By: Neha Singh</p>
+    			<h2>YouTube Video Promotion</h2>
+    			<p>If you are going to start a YouTube channel, then you need to know about YouTube video promotion, Nowadays YouTube has become the most visited social media sites. We GETVIEW provide watch time and subscribe along with real views on your video.</p>
+    			<h3>Read more </h3>
+    		</div>    		
+    	</div>
+    	<div class="footer">
+  			<div class="branding">
+  				<img src="src/logo.png">
+  				<h1>Youtube Viwes</h1>
+  				<p>Get more YouTube Views and Subscribers on your Video. Start Now And Get Seen.</p>
+  			</div>
+  			<div class="contact">
+  				<p>Kapurthala Lucknow -226024</p>
+  				<p>Email: getview.info@gmail.com</p>
+  				<p>Phone: +91-7505412463</p>
+  				<p>Phone: +91-7507673895</p>
+  			</div>
+    	</div>
+    </body>
+    <script type="text/javascript" src="src/script.js"></script>
