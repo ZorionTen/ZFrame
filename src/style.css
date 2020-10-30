@@ -83,7 +83,7 @@ a.menu_item:hover{
 	width:100%;	
 	align-items: center;
 	display:inline-block;
-	background: linear-gradient(90deg, rgba(163,194,125,1) 50%, rgba(59,84,28,1) 100%);
+	background: linear-gradient(to right,#FAAA8D 45%,#FF4000 100%);
 	color:black;
 	text-align: right;
 	align-items: center;
@@ -167,6 +167,13 @@ input.btn:hover{
 	color:#C43E1C;
 	border-bottom-style: solid;
 	animation: borderanim 30s infinite;
+}
+.about img{
+	width:720px;
+	overflow: hidden;
+	object-fit: cover;
+	border: solid black 5px;
+	border-radius: 20px;
 }
 @keyframes borderanim{
 	0% {
