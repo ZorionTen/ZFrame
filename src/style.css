@@ -284,7 +284,8 @@ input.btn:hover{
 	font-weight: bolder;
 }
 .plan img{
-	width:240px;
+	width:128px;
+	overflow: hidden;
 }
 .plan button{
 	font-style: bolder;
@@ -378,18 +379,24 @@ input.btn:hover{
 	margin:0px;
 }
 .process {
-	width:80%;	 
+	background-image: url("../src/filler-main.png");
+	background-position: 50% 0%;
+	width:100%;	 
 	text-align: center;
 	margin:auto;
-	align-items:center;	
+	margin-bottom: 0px;
+	align-items:center;
+	padding-top: 20px;
+	padding-bottom: 50px;
 }
 .process h1{
-	border-top-style: solid;
-	animation: TopBorderAnim 30s infinite;
 	color:#C43E1C;
 	padding:20px;
-	margin-top: 80px;
 	font-family: 'Courier Prime', monospace;
+	background: whitesmoke;
+	width: 20%;
+	margin:auto;
+	border-radius: 50px;
 }
 .step{
 	margin:auto;
@@ -429,8 +436,8 @@ input.btn:hover{
 .support h1{
 	border-top-style: solid;
 	color:whitesmoke;
+	padding-top: 0px;
 	padding:20px;
-	margin-top: 80px;
 	font-family: 'Courier Prime', monospace;
 	margin-bottom: 0px;
 }
