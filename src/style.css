@@ -239,13 +239,12 @@ input.btn:hover{
 }
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
 .pricing{
-	border-top-style: solid;
+	border-top-style: none;
 	margin:auto;
 	font-family: 'Nova Mono', monospace;
 	width:80%;
 	text-align: center;
 	padding:10px;
-	animation: TopBorderAnim 30s infinite;
 }
 @keyframes TopBorderAnim{
 	0% {
@@ -569,6 +568,21 @@ input.btn:hover{
 	100%{
 		transform: rotate(359deg);
 	}
+}
+.bottomImage{
+	text-align: center;
+}
+.bottomImage img{
+	border-style: none;
+	width: 480px;
+	height:auto;
+}
+.credits{	
+	text-align: right;
+}
+.credits a{
+	text-decoration: none;
+	color:lightgray;
 }
 @media only screen and (max-width: 1024px) {
 	body{
