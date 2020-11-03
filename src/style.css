@@ -22,7 +22,6 @@
   background: #522A27;
 }
 
-
 body{
 	font-family: 'Syne Mono', monospace;
 	background:#f6f0f3; 
@@ -102,18 +101,23 @@ a.menu_item:hover{
 	color:#f6f0f3;
 	font:bold;
 }
-#form_main{
+.form_main{
+	margin-top:90px;
 	width:100%;	
 	align-items: center;
 	display:inline-block;
 	background: linear-gradient(to right,#FAAA8D 45%,#FF4000 100%);
+	float:top;
 	color:black;
-	text-align: right;
-	align-items: center;
+	text-align: center;
+	padding: 0px;
 }
-.form_main table{
-	margin:auto;
-	border-spacing: 200px;
+.main_logo{
+	text-align: right;
+	display: inline-block;
+	margin-bottom: 20%;
+	margin-top: 10%;
+	vertical-align: top;
 }
 .form_div{	
 	text-align: center;
@@ -123,6 +127,8 @@ a.menu_item:hover{
 	align-self: right;
 	display: inline-block;
 	padding: 20px;
+	margin:20px;
+	margin-bottom: 0px;
 }
 .form_div input{
 	width: 256px;
@@ -189,11 +195,11 @@ input.btn:hover{
 	text-align: left;
 }
 .about p{
-	text-align: justify-all;
 }
 .about h1{
 	color:#C43E1C;
 	margin-bottom: 0px;
+	text-align: center;
 }
 .about img{
 	width:720px;
@@ -564,16 +570,47 @@ input.btn:hover{
 		transform: rotate(359deg);
 	}
 }
-@media (max-width: 1080px) {
-	#navbar{
-		width:auto;
+@media only screen and (max-width: 1024px) {
+	body{
+		width:100%;
+		margin:auto;
 	}
-	#form_main{
-		width:auto;
+	#navbar{
+		width:100%;
+	}
+	.form_main{
+		width:100%;
+		background: linear-gradient(to bottom,#FAAA8D 45%,#FF4000 100%);
+		text-align: center;
+	}
+	.main_logo{
+		text-align: center;
+		margin-bottom: 10%;
+		margin-top: 10%;
+	}
+	.form_div{
+		margin-bottom: 10%;
 	}
 	.about{
-	width:100%;
-	margin:0px;
-	padding:0px;
+		width:100%;
+		text-align: justify;
+	}
+	.about h1{
+		text-align: center;
+	}
+	.about img{
+		display:none;
+	}
+	.pricing{
+		width: 100%;
+		margin-left:auto;
+		margin-right: auto;
+	}
+	.portfolio{
+		margin:auto;
+		width:90%;
+	}
+	.process h1{
+		width: 40%;		
 	}
 }
