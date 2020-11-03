@@ -190,19 +190,34 @@ input.btn:hover{
 	padding: 10px;
 	width:80%;
 	margin: auto;
+	background-image: url("../src/aboutusbg.png");
+	background-position:100% 0%;
+	background-size:contain;
+	background-repeat: no-repeat;
 }
-.about span{
+.about_text{
+	background-color: rgba(250,250,250,0.7);
+	padding:10px;
+	border-radius: 10px;
+}
+.about_text span{
 	text-align: left;
+	color:black;
+	font-size: 24px;
+	display: inline;
 }
-.about p{
+.about_text p{
+	color:black;
+	display: inline;
 }
-.about h1{
+.about_text h1{
 	color:#C43E1C;
 	margin-bottom: 0px;
 	text-align: center;
 }
 .about img{
-	width:720px;
+	height:720px;
+	width: 720px;
 	overflow: hidden;
 	object-fit: cover;
 	border: solid black 5px;
@@ -223,19 +238,8 @@ input.btn:hover{
 	}
 
 }
-.about p{
-	color:gray;
-	display: inline;
-}
-.about span{
-	color:black;
-	font-size: 24px;
-}
 .about table{
 	border-spacing: 20px;
-}
-.about img{
-	height: 720px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
 .pricing{
@@ -245,6 +249,10 @@ input.btn:hover{
 	width:80%;
 	text-align: center;
 	padding:10px;
+	background-image: url("../src/pricing.png");
+	background-position:50% 100%;
+	background-size:cover;
+	background-repeat: no-repeat;
 }
 @keyframes TopBorderAnim{
 	0% {
@@ -262,7 +270,7 @@ input.btn:hover{
 
 }
 .pricing h1 {
-	color:#C43E1C;
+	color:#C43E1C;	
 } 
 .plan
 {
@@ -448,6 +456,10 @@ input.btn:hover{
 	font-weight: bold;
 }
 .blogs{
+	background-image: url("../src/blogsbg.png");
+	background-position:50% 50%;
+	background-size:contain;
+	background-repeat: no-repeat;
 	width:80%;
 	text-align: center;
 	margin:auto;
@@ -609,7 +621,7 @@ input.btn:hover{
 		width:100%;
 		text-align: justify;
 	}
-	.about h1{
+	.about_text h1{
 		text-align: center;
 	}
 	.about img{
