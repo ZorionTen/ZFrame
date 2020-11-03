@@ -193,8 +193,7 @@ input.btn:hover{
 }
 .about h1{
 	color:#C43E1C;
-	border-bottom-style: solid;
-	animation: borderanim 30s infinite;
+	margin-bottom: 0px;
 }
 .about img{
 	width:720px;
@@ -257,8 +256,7 @@ input.btn:hover{
 	}
 
 }
-.pricing h1
-{
+.pricing h1 {
 	color:#C43E1C;
 } 
 .plan
@@ -270,7 +268,7 @@ input.btn:hover{
 	box-shadow:0px 10px 20px gray;
 	border-radius: 10px;
 	margin :50px;
-	width:360px;
+	width:360px;	
 }
 .plan h2
 {
@@ -380,7 +378,7 @@ input.btn:hover{
 }
 .process {
 	background-image: url("../src/filler-main.png");
-	background-position: 50% 0%;
+	background-position: 50% 50%;
 	width:100%;	 
 	text-align: center;
 	margin:auto;
@@ -512,6 +510,59 @@ input.btn:hover{
 .contact{
 	text-align: left;
 	display: inline-block;
+}
+.underLine{
+	display: block;
+	--a: #C43E1C; 
+	background: linear-gradient(to right,var(--a) 30%,rgba(00,100,00,00) 30%,rgba(00,100,00,00) 32%,var(--a) 32%,var(--a) 35%,rgba(00,100,00,00) 35%,rgba(00,100,00,00) 37%,var(--a) 37%);
+	background-size: 200% 200%;
+	height:5px;
+	width: 50%;
+	margin:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 100px;
+	animation: animLine 4s infinite;	
+}
+@keyframes animLine
+{
+		00%{
+			background-position: 100% 0%;
+		}
+		90%{
+			background-position: -10% 0%;
+		}
+		95%{
+			background-position: 0% 0%;
+		}
+		100%{
+			background-position: -50% 0%;
+		}
+}
+.whatsapp{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+.whatsapp i{
+	margin-top: 11px;
+	display: inline-block;
+	animation: rotWa 10s infinite;
+}
+@keyframes rotWa{
+	80%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(359deg);
+	}
 }
 @media (max-width: 1080px) {
 	#navbar{
