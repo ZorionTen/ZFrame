@@ -221,7 +221,7 @@ input.btn:hover{
 	width: 720px;
 	overflow: hidden;
 	object-fit: cover;
-	border: solid black 5px;
+	border: none black 5px;
 	border-radius: 20px;
 }
 @keyframes borderanim{
