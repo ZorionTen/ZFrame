@@ -270,6 +270,28 @@ input.btn:hover{
 	}
 
 }
+.slideFromLeft{
+	animation: 1s ease-out 0s 1 sifl;
+}
+@keyframes sifl{
+	0%{
+		transform: translateX(-200%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
+.slideFromRight{
+	animation: 1s ease-out 0s 1 sifr;
+}
+@keyframes sifr{
+	0%{
+		transform: translateX(200%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
 .pricing h1 {
 	color:#C43E1C;	
 } 
