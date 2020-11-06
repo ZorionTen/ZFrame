@@ -6,7 +6,7 @@ $(window).scroll(function(){
        	hH = $('.about').outerHeight(),
        	wH = $(window).height(),
        	wS = $(this).scrollTop();
-	console.log(wS-(hT+hH-wH));
+	//console.log(wS-(hT+hH-wH));
 	if(wS > (hT+hH-wH))
 	{
 		$('.plan').each(function(i, obj) {
