@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+    	<title>Youtube Views</title>
+    	<link rel="stylesheet" href="src/style.css">
+    	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    	<div id="navbar">
+    		<div id="nav_logo" class="logo">
+    			<table>
+    				<td><img src="src/logo.png" alt="logo.png" id="nav_logo"></td>
+    				<td><h2>YOUTUBE VIEWS</h2></td>    				
+    			</table>
+    		</div>
+    		<div id="nav_links">
+	    		<a class="menu_item" onclick="navClick('.form_main')">
+	    			HOME
+	    		</a>
+	    		<a class="menu_item" onclick="navClick('.about')">
+	    			ABOUT US
+	    		</a>
+	    		<a class="menu_item" onclick="navClick('.portfolio')">
+	    			SERVICES
+	    		</a>
+	    		<a class="menu_item" onclick="navClick('.pricing')">
+	    			PRICING
+	    		</a>
+	    		<a class="menu_item" onclick="navClick('.blogs')">
+	    			BLOG
+	    		</a>
+	    		<a class="menu_item" onclick="navClick('.footer')">
+	    			CONTACT
+	    		</a>	 
+    		</div>
+    	</div>
+    	<div class="form_main" id="form_main">
+    			<div class="main_logo">
+	    			<p id="subtext">Video Advertising Agency</p>
+	    			<p id="domain">YOUTUBE VIEWS</p>
+	    			<p id="tagline">We know the significance of YouTube Marketing. Don't read it...SEE IT!</p>
+	    		</div>
+		    		<div class="form_div">    			
+		    			<h4>Get Started</h4>
+		    			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWrlXNcPBAW4IGt8pqUWxfd0CsBDy6k6vS2cALOwisdwWZNw/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		    		</div>
+    	</div>
+    	<div class="about">
+    		<table>
+    			<td>
+    				<img src="src/aboutus.png" alt="aboutus.png">
+    			</td>    			
+    			<td>
+    				<div class="about_text">
+    				<h1>About Us</h1>
+    				<div class="underLine"></div>
+    			 <span>&bull;&#9;Our Key of excellence:-</span><p> Our primary objective is to Get Your YouTube Video Seen by Genuine viewer. Our clients get maximum YouTube views and also get genuine subscriber on their channel. And we make every possible effort in providing them a Healthy and competitive edge over their competitor in the market.</p><br>
+				<span>&bull;&#9;Reliability:-</span><p> Our Service quality is being trustworthy and performing consistently well. Our result is most reliable in the market. We perform what we promised service dependably and accurately. Our company delivers its promises about delivery, service provision, problem resolutions and pricing.</p><br>
+<span>&bull;&#9;Responsiveness:-</span><p> Our company insists on careful readiness to deal with the problems of our company, requesting party’s complaints and providing prompt service to help customers. We at all times focus on accountability to customers and answers to their questions, and help problems. We provide customized service to customers.
+</p><br>
+<span>&bull;&#9;Assurance:-</span><p> Assurance means Trust gains in form of customer that connects with the company, thus we think about the importance of creating trust and confidence of customers for achieving profit and customer loyalty.
+</p><br>
+<span>&bull;&#9;Vision:-</span><p> With the increasing dependence on Get View, almost every YouTuber’s is making a strong place in the market to get new subscribers and for more like and comments people contact on more and more in Get View. Our highly professional team of video marketing experts has this unique vision of placing our clients in the league of video trending. We want to promote growth in the best way.
+</p><br>
+<span>&bull;&#9;Mission:-</span><p> It is true that video trending cannot happen without good content. The Get View works hard to strike a balance between quality and affordability. In fact, we offer a comprehensive plan that greatly encourages customers to compare and then make decisions.
+</p><br>
+<span>&bull;&#9;Your Goal:-</span><p> We understand your needs. We ensure the best conversions for our clients. We know what their businesses mean to them and therefore leave no stone unturned to offer the best services.</p><br>
+					</div>
+
+    			</td>
+    		</table>    		
+    	</div>
+    	<div class="bottomImage">
+    			<img src="src/bottom1-2.png" alt="bottom1.png">	
+    		</div>
+    	<div class='pricing'>
+    		<h1>Plans</h1>
+    		<div class="underLine"></div>
+    		<div class="plan">
+    			<img src="src/price.png">
+    			<h3>Budget Plan</h2>
+    			<h2>&#x20B9;1599</h2>    			
+    			<p>15k+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn" onclick="window.location.href='https://rzp.io/l/NMoanNS'">Buy Now</button>
+    		</div>
+    		<div class="plan">
+    			<img src="src/price.png">
+    			<h3>Advance Plan</h2>
+    			<h2>&#x20B9;2399</h2>
+    			<p>22+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn" onclick="window.location.href='https://rzp.io/l/f3G303ulGc'">Buy Now</button>
+    		</div>
+    		<div class="plan">
+    			<img src="src/price.png">
+    			<h3>Bronze Plan</h2>
+    			<h2>&#x20B9;3199</h2>
+    			<p>28k+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn" onclick="window.location.href='https://rzp.io/l/xl1qiCD'">Buy Now</button>
+    		</div>
+    		<div class="plan">
+    			<img src="src/price.png">
+    			<h3>Silver Plan</h2>
+    			<h2>&#x20B9;4999</h2>
+    			<p>38k+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn" onclick="window.location.href='https://rzp.io/l/xrSXzif'">Buy Now</button>
+    		</div>
+    		<div class="plan">
+    			<img src="src/price.png">
+    			<h3>Diamond Plan</h2>
+    			<h2>&#x20B9;6499</h2>
+    			<p>49k+ Views</p>
+    			<p>Subscribers</p>
+    			<p>Likes, Share & Comments</p>
+    			<p>24/7 Support</p>
+    			<button class="btn" onclick="window.location.href='https://rzp.io/l/aRzRKq8'">Buy Now</button>
+    		</div>
+    	</div>
+    	<div class="bottomImage">
+    			<img src="src/bottom2.png" alt="bottom2.png">	
+    		</div>
+    	<div class="portfolio">
+    		<h1>We also give a complete report of your video</h1>
+    		<div class="underLine"></div>
+    		<div class="portfolio_items">
+    			<div class="pf_item">
+    				<img src="src/10k-views.jpg"><br>
+    				<a href="https://www.youtube.com/watch?v=McYVujYft3U&t=1s">Harika kitchen byte</a>
+    				<p>15k+ Views</p>
+    			</div>
+    			<div class="pf_item">
+    				<img src="src/20k-views.jpg"><br>
+    				<a href="https://www.youtube.com/watch?v=JRdJiLL5oRU&feature=emb_title">Shabera’s Kitchen</a>
+    				<p>22k+ Views</p>
+    			</div>
+    			<div class="pf_item">
+    				<img src="src/50k-views.jpg"><br>
+    				<a href="http://youtube.com/watch?v=PC68wNPe2MU&feature=emb_title">Green Spaces</a>
+    				<p>28k+ Views</p>
+    			</div>
+    			<div class="pf_item">
+    				<img src="src/1lac-views.jpg"><br>
+    				<a href="https://www.youtube.com/watch?v=UQtCT5HtcQE&t=2s">athul c</a>
+    				<p>38k+ Views</p>
+    			</div>
+    			<div class="pf_item">
+    				<img src="src/1mil-views.jpg"><br>
+    				<a href=https://www.youtube.com/watch?v=7AldJR8K_sc&feature=emb_title>
+Qnetik Gaming</a>
+    				<p>49k+ Views</p>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="banner">
+    		<h1>YOUTUBE VIEWS</h1>
+    		<p>PROMOTE YOUR VIDEOS TO MILLIONS</p>
+    	</div>
+    	<div class="process">
+    		<h1>We follow Few Steps</h1>
+    		
+    		<div class="step">
+    			<h2>STEP 1</h2>
+    			<h3>START YOUR CAMPAIGN</h3>
+    			<p>Sign up and search for your video. Choose budget and target audience. Done!</p>
+    		</div>
+    		<div class="step">
+    			<h2>STEP 2</h2>
+    			<h3>GET SEEN</h3>
+    			<p>Distribute your YouTube video through our trusted publisher network of 10,000+ blogs, websites, apps and social networks.</p>
+    		</div>
+    		<div class="step">
+    			<h2>STEP 3</h2>
+    			<h3>GAIN POPULARITY</h3>
+    			<p>Right people discover your video. Gain popularity and monitor real time results.</p>
+    		</div>
+    		<div class="step">
+    			<h2>STEP 4</h2>
+    			<h3>Reporting Our Video</h3>
+    			<p>Your video is analyzed and then reported.</p>
+    		</div>
+    		<div class="step">
+    			<h2>STEP 5</h2>
+    			<h3>Confirmation</h3>
+    			<p>Confirmation is done on your YouTube channel and our report.</p>
+    		</div>
+    	</div>
+    	<div class="support">
+    		<h1>Best Team Support</h1>
+    		<p>Our team will join you and support you in every way, any problem related to your video, any discussion, share it with us.</p>
+    	</div>
+    	<div class="blogs">
+    		<h1>Blogs</h1>
+    		<div class="underLine"></div>
+    		<div class="blog">
+    			<img src="src/blog1.jpg">
+    			<p>Posted By: Abhishek Shrivastav</p>
+    			<h2>How to grow Your YouTube Channel to maximize views?</h2>
+    			<p>India has become the biggest developing place in world. ComScore information recommends that YouTube has in excess of 265 million month to month dynamic clients in India. In the event that you have a YouTube channel and you make recordings, begin advancing it starting now and into the foreseeable future.</p>
+    			<h3>Read more </h3>
+    		</div>
+    		<div class="blog">
+    			<img src="src/blog2.jpg">
+    			<p>Posted By: Shreya Singh</p>
+    			<h2>YouTube Video Monetization</h2>
+    			<p>video monetization is the way toward creation of cash through the video that share online on any of the YouTube accomplice stage. This typically cultivated through Advertisement and through part.</p>
+    			<h3>Read more </h3>
+    		</div>
+    		<div class="blog">
+    			<img src="src/blog3.jpg">
+    			<p>Posted By: Shreya Shrivastav</p>
+    			<h2>YouTube Video Promotion</h2>
+    			<p>On the off chance that you will begin a YouTube channel, at that point you have to think about YouTube video advancement, Nowadays YouTube has become the most visited web-based media destinations. We GETVIEW furnish watch time and buy in alongside genuine perspectives on your video.</p>
+    			<h3>Read more </h3>
+    		</div>    		
+    	</div>
+    	<div class="footer">
+  			<div class="branding">
+  				<img src="src/logo.png">
+  				<h1>Youtube Views</h1>
+  				<p>Get more YouTube Views and Subscribers on your Video. Start Now And Get Seen.</p>
+  			</div>
+  			<div class="contact">
+  				<p>Email: <a href="mailto:Support@youtubeviews.site">Support@youtubeviews.site</a></p>
+  				<p>Phone: <a href="tel:+916307309533">+91-6307309533</a></p>
+  			</div>
+    	</div>
+    		<a class="whatsapp" href='https://wa.me/916307309533'><i class="fa fa-whatsapp" style="font-size:36px"></i></a>
+    <div class="credits">
+    	<a href='https://pngtree.com/so/work'>work png from pngtree.com</a>
+    	<a href='https://pngtree.com/so/laptop'>laptop png from pngtree.com</a>
+    </div>
+    </body>
+    <script type="text/javascript" src="src/script.js"></script>
