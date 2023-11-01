@@ -1,67 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>SUBSCRIBE!</title>
-	<script data-ad-client="ca-pub-3715106991055263" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6149628226175231"
-     crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kahe zinda ho?</title>
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-</style>
-<body>	
-	<div id="main" onclick="window.location.href ='https://www.youtube.com/channel/UCC9WkHSSVpaod7WaYmqD-7w'">
-		<div id="empty"></div>
-		<span id="text">SUBSCRIBE!</span>
-		<div id='triangle'></div>
-	</div>	
-	<style type="text/css">
-		
-		body{
-			text-align: center;
-			background: black;
+
+<body class="bg-slate-900 w-screen h-screen relative">
+	<div id="player"
+		class="bg-[url('/face.png')] bg-contain bg-center bg-no-repeat h-40 w-40 bg-green-300 rounded-full"></div>
+	<div class="fixed top-24 left-24 text-2xl text-sky-400">Happy Birthday<br>Kab mar rhe ho?</div>
+	<div class="fixed top-24 right-24 text-2xl text-sky-400" id="counter">Score: <span></span></div>
+	<div id="fail" class="fixed w-screen h-screen text-red-200 text-9xl hidden grid gap-4 place-content-center"><p class="flex-1">FAIL</p></div>
+	<script>
+		const px = "px";
+		let player;
+		let vector = { x: 0, y: 0 };
+		let g = 5; // Use standard gravity value
+		let tick = 0;
+		let interval;
+		const MAX = 50;
+		let counter = 0;
+
+		onload = () => {
+			player = document.querySelector('#player');
+			player.style.position = "fixed";
+			player.style.bottom = 500 + px;
+			player.style.left = 100 + px;
+
+			start();
 		}
-		#main{		
-			display: inline-block;
-			color:white;
-			background: red;
-			border: 20px solid red;
-			border-radius:  20px;
-			height:200px;
-			width:auto;
-			vertical-align: middle;
-			margin-top: 10%;
-			transition-duration: 0.5s;
+
+		let start = () => {
+			interval = setInterval(bounce, 50);
+			player.addEventListener('click', (e) => {
+				let v = getPositionInElement(e.target, e);
+				vector.x = v * 2;
+				vector.y = 30;
+				counter+=1;
+				document.querySelector('#counter span').innerHTML=counter;
+			});
+		};
+
+		let bounce = () => {
+			const dt = 0.05; // Time step
+			const dampening = 0.9; // Dampening factor
+			let top = (vector.y * tick * dt) - (0.5 * g * tick * tick * dt * dt);
+			let left = vector.x * tick * dt;
+
+			// Apply dampening to reduce bouncing amplitude
+			vector.y *= dampening;
+
+			top = Math.max(-MAX, Math.min(MAX, top));
+			left = Math.max(-MAX, Math.min(MAX, left));
+
+			player.style.bottom = parseInt(player.style.bottom.replace(px, '')) + top + px;
+			player.style.left = parseInt(player.style.left.replace(px, '')) + left + px;
+			tick += 1;
+
+			if (parseInt(player.style.bottom.replace(px, '')) < 0) {
+				clearInterval(interval);
+				document.querySelector("#fail").classList.remove('hidden');
+
+			}
 		}
-		#main:hover{
-			background: white;
-			border-color: white;
-			color:red;
+
+		function getPositionInElement(element, event) {
+			const rect = element.getBoundingClientRect();
+			const x = event.clientX - rect.left;
+			const halfWidth = rect.width / 2;
+			return x < halfWidth ? 1 : -1;
 		}
-		#main:hover > #triangle{
-			border-left-color: red; 
-		}
-		#empty{
-			display: inline-block;
-			width:0px;
-			height: 100%;
-			background: green;
-			vertical-align: middle;
-		}
-		#text{	
-			vertical-align: middle;	
-			font-family: 'Press Start 2P', cursive;
-			display: inline-block;	
-			font-size: 5vw;				
-		}
-		#triangle{			
-			vertical-align: middle;
-			display: inline-block;
-			border-top: 60px solid transparent;
-  			border-bottom: 60px solid transparent;  
-  			border-left: 100px solid white;
-  			transition-duration: 0.5s;
-		}
-	</style>
+	</script>
 </body>
+
 </html>
